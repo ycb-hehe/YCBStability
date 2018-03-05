@@ -8,7 +8,7 @@
 
 #import "YCBViewController.h"
 
-#import <NSArray+YCBStability.h>
+#import "NSArray+YCBStability.h"
 
 @interface YCBViewController ()
 
