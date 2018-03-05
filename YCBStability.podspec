@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'YCBStability/Classes/**/*'
+  s.source_files = 'YCBStability/Classes/*.{h,m}'
   s.requires_arc = true
 
   # s.resource_bundles = {
