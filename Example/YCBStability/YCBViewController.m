@@ -24,6 +24,9 @@
     
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
     [dic safeSetObject:@"1" forKey:@"1"];
+    
+    Car *car = [[Car alloc] init];
+    
 }
 
 - (void)didReceiveMemoryWarning
