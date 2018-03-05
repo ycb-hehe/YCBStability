@@ -27,7 +27,7 @@
 {
     NSAssert((index < self.count),([YCBStabilityLogs crashReason:@"数组越界"
                                                          release:@"返回nil"
-                                                        otherLog:[NSString stringWithFormat:@"数组Count:%@ \n参数下标index:%@",@(self.count),@(index)]]));
+                                                        otherLog:[NSString stringWithFormat:@"数组Count:%@ 参数下标index:%@",@(self.count),@(index)]]));
                                     
     if (index < self.count){
         return [self safeObjectAtIndex:index];
