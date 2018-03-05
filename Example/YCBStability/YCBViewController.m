@@ -8,6 +8,9 @@
 
 #import "YCBViewController.h"
 
+#import <YCBStability/YCBStability-prefix.pch>
+
+
 @interface YCBViewController ()
 
 @end
@@ -20,7 +23,11 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     
+    NSArray *arr= @[@"1",@"2",@"3"];
     
+    NSString *str = [arr safeObjectAtIndex:4];
+    
+    NSLog(@"%@",str);
 }
 
 - (void)didReceiveMemoryWarning

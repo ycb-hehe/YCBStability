@@ -12,6 +12,8 @@
 
 - (id)safeObjectAtIndex:(NSUInteger)index
 {
+    NSAssert((index < self.count), @"名字不能为空");
+
     if (index < self.count){
         return [self objectAtIndex:index];
     }else{
