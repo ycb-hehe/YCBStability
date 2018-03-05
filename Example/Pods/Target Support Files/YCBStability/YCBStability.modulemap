@@ -1,0 +1,6 @@
+framework module YCBStability {
+  umbrella header "YCBStability-umbrella.h"
+
+  export *
+  module * { export * }
+}

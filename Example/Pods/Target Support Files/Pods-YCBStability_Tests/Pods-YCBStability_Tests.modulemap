@@ -1,0 +1,6 @@
+framework module Pods_YCBStability_Tests {
+  umbrella header "Pods-YCBStability_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

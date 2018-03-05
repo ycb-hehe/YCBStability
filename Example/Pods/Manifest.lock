@@ -1,0 +1,16 @@
+PODS:
+  - YCBStability (0.1.0)
+
+DEPENDENCIES:
+  - YCBStability (from `../`)
+
+EXTERNAL SOURCES:
+  YCBStability:
+    :path: ../
+
+SPEC CHECKSUMS:
+  YCBStability: 16d9787167da0c3013700971ecb8827602728ac5
+
+PODFILE CHECKSUM: 4f204f20a5180a2b3b066eeebc33a976f38fc484
+
+COCOAPODS: 1.4.0
