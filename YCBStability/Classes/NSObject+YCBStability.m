@@ -8,13 +8,13 @@
 
 #import "NSObject+YCBStability.h"
 
-#import "YCBNonEmptyTesting.h"
+#import "YCBNonEmpty.h"
 
 @implementation NSObject (YCBStability)
 
 - (void)safeSetValue:(id)value forKey:(NSString *)key
 {
-    if (value && [YCBNonEmptyTesting isStringWithAnyText:key]) {
+    if (value && [YCBNonEmpty isString:key]) {
         [self setValue:value forKey:key];
     }
 }

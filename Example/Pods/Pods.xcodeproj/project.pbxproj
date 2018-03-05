@@ -19,8 +19,8 @@
 		5C0BB01E204CF38E00D2CC39 /* NSSet+YCBStability.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C0BB013204CF38E00D2CC39 /* NSSet+YCBStability.h */; };
 		5C0BB01F204CF38E00D2CC39 /* NSSet+YCBStability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0BB014204CF38E00D2CC39 /* NSSet+YCBStability.m */; };
 		5C0BB020204CF38E00D2CC39 /* YCBKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C0BB015204CF38E00D2CC39 /* YCBKit.h */; };
-		5C0BB022204CF38E00D2CC39 /* YCBNonEmptyTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0BB017204CF38E00D2CC39 /* YCBNonEmptyTesting.m */; };
-		5CC2BFE4204D2C1100873FBD /* YCBNonEmptyTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CC2BFE3204D2C1100873FBD /* YCBNonEmptyTesting.h */; };
+		5C0BB022204CF38E00D2CC39 /* YCBNonEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0BB017204CF38E00D2CC39 /* YCBNonEmpty.m */; };
+		5CC2BFE4204D2C1100873FBD /* YCBNonEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CC2BFE3204D2C1100873FBD /* YCBNonEmpty.h */; };
 		5CC2BFEE204D49AB00873FBD /* MyTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CC2BFEC204D49AB00873FBD /* MyTest.h */; };
 		5CC2BFEF204D49AB00873FBD /* MyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC2BFED204D49AB00873FBD /* MyTest.m */; };
 		5CC2BFF2204D523100873FBD /* YCBStabilityLogs.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CC2BFF0204D523100873FBD /* YCBStabilityLogs.h */; };
@@ -63,8 +63,8 @@
 		5C0BB013204CF38E00D2CC39 /* NSSet+YCBStability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSSet+YCBStability.h"; path = "YCBStability/Classes/NSSet+YCBStability.h"; sourceTree = "<group>"; };
 		5C0BB014204CF38E00D2CC39 /* NSSet+YCBStability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSSet+YCBStability.m"; path = "YCBStability/Classes/NSSet+YCBStability.m"; sourceTree = "<group>"; };
 		5C0BB015204CF38E00D2CC39 /* YCBKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCBKit.h; path = YCBStability/Classes/YCBKit.h; sourceTree = "<group>"; };
-		5C0BB017204CF38E00D2CC39 /* YCBNonEmptyTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCBNonEmptyTesting.m; path = YCBStability/Classes/YCBNonEmptyTesting.m; sourceTree = "<group>"; };
-		5CC2BFE3204D2C1100873FBD /* YCBNonEmptyTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCBNonEmptyTesting.h; path = YCBStability/Classes/YCBNonEmptyTesting.h; sourceTree = "<group>"; };
+		5C0BB017204CF38E00D2CC39 /* YCBNonEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCBNonEmpty.m; path = YCBStability/Classes/YCBNonEmpty.m; sourceTree = "<group>"; };
+		5CC2BFE3204D2C1100873FBD /* YCBNonEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCBNonEmpty.h; path = YCBStability/Classes/YCBNonEmpty.h; sourceTree = "<group>"; };
 		5CC2BFEC204D49AB00873FBD /* MyTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTest.h; path = YCBStability/Classes/MyTest.h; sourceTree = "<group>"; };
 		5CC2BFED204D49AB00873FBD /* MyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyTest.m; path = YCBStability/Classes/MyTest.m; sourceTree = "<group>"; };
 		5CC2BFF0204D523100873FBD /* YCBStabilityLogs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCBStabilityLogs.h; path = YCBStability/Classes/YCBStabilityLogs.h; sourceTree = "<group>"; };
@@ -156,8 +156,8 @@
 				5C0BB012204CF38E00D2CC39 /* NSObject+YCBStability.m */,
 				5C0BB013204CF38E00D2CC39 /* NSSet+YCBStability.h */,
 				5C0BB014204CF38E00D2CC39 /* NSSet+YCBStability.m */,
-				5CC2BFE3204D2C1100873FBD /* YCBNonEmptyTesting.h */,
-				5C0BB017204CF38E00D2CC39 /* YCBNonEmptyTesting.m */,
+				5CC2BFE3204D2C1100873FBD /* YCBNonEmpty.h */,
+				5C0BB017204CF38E00D2CC39 /* YCBNonEmpty.m */,
 				5CC2BFF0204D523100873FBD /* YCBStabilityLogs.h */,
 				5CC2BFF1204D523100873FBD /* YCBStabilityLogs.m */,
 				9B75C7C717642DDF76D0488CF179645D /* Pod */,
@@ -285,7 +285,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CC2BFE4204D2C1100873FBD /* YCBNonEmptyTesting.h in Headers */,
+				5CC2BFE4204D2C1100873FBD /* YCBNonEmpty.h in Headers */,
 				5C0BB01E204CF38E00D2CC39 /* NSSet+YCBStability.h in Headers */,
 				5CC2BFF2204D523100873FBD /* YCBStabilityLogs.h in Headers */,
 				5C0BB018204CF38E00D2CC39 /* NSArray+YCBStability.h in Headers */,
@@ -389,7 +389,7 @@
 				5C0BB01D204CF38E00D2CC39 /* NSObject+YCBStability.m in Sources */,
 				5CC2BFEF204D49AB00873FBD /* MyTest.m in Sources */,
 				80EBD48824D2A450353FEEF524DDF077 /* Pods-YCBStability_Example-dummy.m in Sources */,
-				5C0BB022204CF38E00D2CC39 /* YCBNonEmptyTesting.m in Sources */,
+				5C0BB022204CF38E00D2CC39 /* YCBNonEmpty.m in Sources */,
 				5CC2BFF3204D523100873FBD /* YCBStabilityLogs.m in Sources */,
 				5C0BB019204CF38E00D2CC39 /* NSArray+YCBStability.m in Sources */,
 				5C0BB01B204CF38E00D2CC39 /* NSDictionary+YCBStability.m in Sources */,

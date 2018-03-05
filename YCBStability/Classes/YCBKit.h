@@ -7,7 +7,7 @@
 //
 
 
-#import "YCBNonEmptyTesting.h"
+#import "YCBNonEmpty.h"
 #import "NSArray+YCBStability.h"
 #import "NSDictionary+YCBStability.h"
 #import "NSSet+YCBStability.h"

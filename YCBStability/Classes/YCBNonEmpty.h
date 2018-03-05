@@ -8,29 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
-@interface YCBNonEmptyTesting : NSObject
+@interface YCBNonEmpty : NSObject
 
 /*! @brief 判断是否是非空的数组
  */
-+ (BOOL)isArrayWithObjects:(id)object;
++ (BOOL)isArray:(id)object;
 
 
 /*! @brief 判断是否是非空的集合
  */
-+ (BOOL)isSetWithObjects:(id)object;
++ (BOOL)isSet:(id)object;
 
 
 /*! @brief 判断是否是非空的字符串
  */
-+ (BOOL)isStringWithAnyText:(id)text;
++ (BOOL)isString:(id)text;
 
 
 /*! @brief 判断是否是非空的字典
  */
-+ (BOOL)isDictionaryWithObject:(id)object;
-
-
-- (void)doTesting;
-
++ (BOOL)isDictionary:(id)object;
 
 @end
