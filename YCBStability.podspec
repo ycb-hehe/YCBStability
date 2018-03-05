@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-   A Stability kit
+    This is a security - related framework that ensures the robustness of the code and avoids crash as much as possible.
   DESC
 
   s.homepage         = 'https://github.com/ycb-hehe/YCBStability'
