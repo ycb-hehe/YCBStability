@@ -8,7 +8,9 @@
 
 #import "YCBViewController.h"
 
-#import "NSArray+YCBStability.h"
+#import <NSDictionary+YCBStability.h>
+#import <Car.h>
+
 
 @interface YCBViewController ()
 
@@ -19,14 +21,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     
-    
-    NSArray *arr= @[@"1",@"2",@"3"];
-    
-    NSString *str = [arr safeObjectAtIndex:1];
-    
-    NSLog(@"%@",str);
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    [dic safeSetObject:@"1" forKey:@"1"];
 }
 
 - (void)didReceiveMemoryWarning
