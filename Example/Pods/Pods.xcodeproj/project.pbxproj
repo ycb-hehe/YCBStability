@@ -20,7 +20,7 @@
 		5C0BB01F204CF38E00D2CC39 /* NSSet+YCBStability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0BB014204CF38E00D2CC39 /* NSSet+YCBStability.m */; };
 		5C0BB020204CF38E00D2CC39 /* YCBKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C0BB015204CF38E00D2CC39 /* YCBKit.h */; };
 		5C0BB022204CF38E00D2CC39 /* YCBNonEmptyTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0BB017204CF38E00D2CC39 /* YCBNonEmptyTesting.m */; };
-		5CC2BFE2204D1BD800873FBD /* YCBNonEmptyTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CC2BFE1204D1BD800873FBD /* YCBNonEmptyTesting.h */; };
+		5CC2BFE4204D2C1100873FBD /* YCBNonEmptyTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CC2BFE3204D2C1100873FBD /* YCBNonEmptyTesting.h */; };
 		7C8713EEAD14DF1B11326C6213E12D91 /* Pods-YCBStability_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EB33BE4838341736392F423F81A529 /* Pods-YCBStability_Tests-dummy.m */; };
 		7FE51499B5CE64DBB079193F09C50002 /* YCBStability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D72BB698CE14A0EEF81E4141A52D75C /* YCBStability-dummy.m */; };
 		80EBD48824D2A450353FEEF524DDF077 /* Pods-YCBStability_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F1E6B4E9FF2BF1B17BC95D750F8EC3 /* Pods-YCBStability_Example-dummy.m */; };
@@ -60,7 +60,7 @@
 		5C0BB014204CF38E00D2CC39 /* NSSet+YCBStability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSSet+YCBStability.m"; path = "YCBStability/Classes/NSSet+YCBStability.m"; sourceTree = "<group>"; };
 		5C0BB015204CF38E00D2CC39 /* YCBKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCBKit.h; path = YCBStability/Classes/YCBKit.h; sourceTree = "<group>"; };
 		5C0BB017204CF38E00D2CC39 /* YCBNonEmptyTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCBNonEmptyTesting.m; path = YCBStability/Classes/YCBNonEmptyTesting.m; sourceTree = "<group>"; };
-		5CC2BFE1204D1BD800873FBD /* YCBNonEmptyTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCBNonEmptyTesting.h; sourceTree = "<group>"; };
+		5CC2BFE3204D2C1100873FBD /* YCBNonEmptyTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCBNonEmptyTesting.h; path = YCBStability/Classes/YCBNonEmptyTesting.h; sourceTree = "<group>"; };
 		5E6E7B50FE9E3BFA3D74771263454BE0 /* YCBStability.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YCBStability.modulemap; sourceTree = "<group>"; };
 		63EBE50AA780CF8C1A59EA7DFE8F377F /* Pods-YCBStability_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YCBStability_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		64C5082D83DA62E456BC23A4AEF9EE3B /* Pods-YCBStability_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YCBStability_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 				5C0BB012204CF38E00D2CC39 /* NSObject+YCBStability.m */,
 				5C0BB013204CF38E00D2CC39 /* NSSet+YCBStability.h */,
 				5C0BB014204CF38E00D2CC39 /* NSSet+YCBStability.m */,
-				5CC2BFE1204D1BD800873FBD /* YCBNonEmptyTesting.h */,
+				5CC2BFE3204D2C1100873FBD /* YCBNonEmptyTesting.h */,
 				5C0BB017204CF38E00D2CC39 /* YCBNonEmptyTesting.m */,
 				9B75C7C717642DDF76D0488CF179645D /* Pod */,
 				B8C443CF9F427000905623D7E6D52276 /* Support Files */,
@@ -273,10 +273,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC2BFE4204D2C1100873FBD /* YCBNonEmptyTesting.h in Headers */,
 				5C0BB01E204CF38E00D2CC39 /* NSSet+YCBStability.h in Headers */,
 				5C0BB018204CF38E00D2CC39 /* NSArray+YCBStability.h in Headers */,
 				5C0BB020204CF38E00D2CC39 /* YCBKit.h in Headers */,
-				5CC2BFE2204D1BD800873FBD /* YCBNonEmptyTesting.h in Headers */,
 				B5432AC54E2FA3DA5D958B2C42DF11C5 /* Pods-YCBStability_Example-umbrella.h in Headers */,
 				5C0BB01A204CF38E00D2CC39 /* NSDictionary+YCBStability.h in Headers */,
 				5C0BB01C204CF38E00D2CC39 /* NSObject+YCBStability.h in Headers */,

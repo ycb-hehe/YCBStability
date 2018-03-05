@@ -14,7 +14,6 @@
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* YCBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* YCBAppDelegate.m */; };
 		6003F5A7195388D20070C39A /* YCBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* YCBViewController.m */; };
-		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -38,8 +37,8 @@
 
 /* Begin PBXFileReference section */
 		0EC8737593FC4CB1B0AFAE23 /* Pods-YCBStability_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCBStability_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YCBStability_Example/Pods-YCBStability_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		18B5B79AABB02AFEBD84702C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		442BA9C4E6CB16D0C9B3A565 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		18B5B79AABB02AFEBD84702C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		442BA9C4E6CB16D0C9B3A565 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YCBStability_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCBStability_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,7 +51,6 @@
 		6003F59D195388D20070C39A /* YCBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCBAppDelegate.m; sourceTree = "<group>"; };
 		6003F5A5195388D20070C39A /* YCBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCBViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* YCBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCBViewController.m; sourceTree = "<group>"; };
-		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* YCBStability_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YCBStability_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
@@ -64,7 +62,7 @@
 		9260253A804B5ACF26291ED5 /* Pods_YCBStability_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YCBStability_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94725984CCE9C53B550D40F9 /* Pods-YCBStability_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCBStability_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YCBStability_Tests/Pods-YCBStability_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DED405BED86FE3DDD8387141 /* Pods_YCBStability_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YCBStability_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4E17DC09E8EBB8C8043D23F /* YCBStability.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YCBStability.podspec; path = ../YCBStability.podspec; sourceTree = "<group>"; };
+		E4E17DC09E8EBB8C8043D23F /* YCBStability.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YCBStability.podspec; path = ../YCBStability.podspec; sourceTree = "<group>"; };
 		E7DCF20C0C3EA7C994C6D4FE /* Pods-YCBStability_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCBStability_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YCBStability_Tests/Pods-YCBStability_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EF25F1FD088C8BC76CCC7635 /* Pods-YCBStability_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCBStability_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YCBStability_Example/Pods-YCBStability_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,7 +136,6 @@
 				6003F5A5195388D20070C39A /* YCBViewController.h */,
 				6003F5A6195388D20070C39A /* YCBViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for YCBStability";
@@ -281,7 +278,6 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
-				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
