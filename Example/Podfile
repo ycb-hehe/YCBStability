@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YCBStability_Example' do
+  pod 'YCBStability', :path => '../'
+
+  target 'YCBStability_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
