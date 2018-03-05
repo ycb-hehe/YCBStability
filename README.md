@@ -22,7 +22,7 @@ pod 'YCBStability'
 
 ## Author
 
-ycb-hehe, 35799653+ycb-hehe@users.noreply.github.com
+ycb-hehe, 113005209@qq.com
 
 ## License
 
