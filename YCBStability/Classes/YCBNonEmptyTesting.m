@@ -32,4 +32,9 @@
     return [text isKindOfClass:[NSString class]] && [(NSString*)text length] > 0;
 }
 
+- (void)doTesting
+{
+    
+}
+
 @end

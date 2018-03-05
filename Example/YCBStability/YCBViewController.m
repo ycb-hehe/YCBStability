@@ -8,9 +8,10 @@
 
 #import "YCBViewController.h"
 
-#import <NSDictionary+YCBStability.h>
-#import "Car"
-
+#import "YCBStability/YCBStability-prefix.pch"
+#import "NSArray+YCBStability.h"
+#import "NSDictionary+YCBStability.h"
+#import "MyTest.h"
 
 @interface YCBViewController ()
 
@@ -22,11 +23,7 @@
 {
     [super viewDidLoad];
     
-    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
-    [dic safeSetObject:@"1" forKey:@"1"];
-    
-    Car *car = [[Car alloc] init];
-    
+    [MyTest doTesting];
 }
 
 - (void)didReceiveMemoryWarning

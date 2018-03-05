@@ -6,6 +6,5 @@ target 'YCBStability_Example' do
   target 'YCBStability_Tests' do
     inherit! :search_paths
 
-    
   end
 end

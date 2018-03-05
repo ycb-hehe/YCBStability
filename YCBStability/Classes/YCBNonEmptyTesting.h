@@ -29,4 +29,8 @@
  */
 + (BOOL)isDictionaryWithObject:(id)object;
 
+
+- (void)doTesting;
+
+
 @end

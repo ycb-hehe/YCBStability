@@ -30,9 +30,9 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'YCBStability/Classes/*.{h,m}'
+  s.source_files = 'YCBStability/Classes/**/*.{h,m}'
   s.requires_arc = true
-
+s.public_header_files = 'Pod/Classes/**/*.h'
   # s.resource_bundles = {
   #   'YCBStability' => ['YCBStability/Assets/*.png']
   # }
