@@ -8,8 +8,7 @@
 
 #import "YCBViewController.h"
 
-#import <YCBStability/YCBStability-prefix.pch>
-
+#import <NSArray+YCBStability.h>
 
 @interface YCBViewController ()
 
@@ -25,7 +24,7 @@
     
     NSArray *arr= @[@"1",@"2",@"3"];
     
-    NSString *str = [arr safeObjectAtIndex:4];
+    NSString *str = [arr safeObjectAtIndex:1];
     
     NSLog(@"%@",str);
 }

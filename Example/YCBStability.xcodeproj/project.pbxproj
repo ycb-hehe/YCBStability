@@ -531,7 +531,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YCBStability/YCBStability-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+				HEADER_SEARCH_PATHS = "/Users/ycb/Desktop/Lib/YCBStability/YCBStability/**";
 				INFOPLIST_FILE = "YCBStability/YCBStability-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
@@ -548,7 +548,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YCBStability/YCBStability-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+				HEADER_SEARCH_PATHS = "/Users/ycb/Desktop/Lib/YCBStability/YCBStability/**";
 				INFOPLIST_FILE = "YCBStability/YCBStability-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
