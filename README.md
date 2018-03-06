@@ -50,8 +50,9 @@ pod 'YCBStability'
 常见的 ```- (ObjectType)objectAtIndex:(NSUInteger)index``` 会引起数组越界，导致Crash
 
 引入 YCBStability后， 你依然使用objectAtIndex </br>
-在Debug模式下，依旧会Crash，但是我们加入了日志，方便追踪Crash信息 </br>
-在Release模式下，我们将返回一个nil，防止Crash </br>
+
+Debug模式:，依旧会Crash，但是我们加入了日志，方便追踪Crash信息 </br>
+Release模式:我们将返回一个nil，防止Crash </br>
 
 
 
