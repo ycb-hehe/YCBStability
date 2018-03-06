@@ -11,14 +11,57 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-## Installation
+## 介绍
 
-YCBStability is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+一款提高iOS稳定性，有效防止闪退的框架
+
+## 特效
+
+** 稳定性: 解决常见闪退
+** 无缝接入: 几乎不需要任何更改与替换现有代码
+** 无侵入性: 模型无需继承自其他基类。
+** 轻量: 该框架只有 2 个文件
+** 多样性: 区分了Debug与Release环境
+
+## 安装
+
+### CocoaPods
 
 ```ruby
 pod 'YCBStability'
 ```
+执行 ```pod install or pod update.```
+导入 <YCBStability/YCBStability.h>。
+
+### 手动安装
+
+下载 YCBStability 文件夹内的所有内容。
+将 YCBStability 内的源文件添加(拖放)到你的工程。
+导入 YCBStability.h。
+
+
+
+
+
+## 使用
+
+全局引入YCBStability.h
+
+### NSArray
+
+常见的 ```- (ObjectType)objectAtIndex:(NSUInteger)index``` 会引起数组越界，
+
+引入 YCBStability后， 你依然使用objectAtIndex，
+在Debug模式下，我们在Crash加入了日志，方便追踪Crash信息
+在Release模式下，我们将返回一个nil，防止Crash
+
+
+
+
+## 系统要求
+
+该项目最低支持 iOS 8.0 和 Xcode 7.0。
+
 
 ## Author
 
