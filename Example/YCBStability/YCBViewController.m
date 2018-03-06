@@ -9,9 +9,7 @@
 #import "YCBViewController.h"
 
 #import "YCBStability/YCBStability-prefix.pch"
-#import "NSArray+YCBStability.h"
-#import "NSDictionary+YCBStability.h"
-#import "MyTest.h"
+#import "YCBStabilityKit.h"
 
 @interface YCBViewController ()
 
@@ -22,8 +20,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    NSArray *arr1 =  @[@"1",@"2"];
     
-    [MyTest doTesting];
+    NSArray *arr2 =  [[NSArray alloc] init];
+    
+    NSArray *arr3 =  [[NSArray alloc] initWithObjects:@"1",nil];
+    
+    NSArray *arr4 =  [NSArray alloc];
+    
+    NSMutableArray *arr5 =  [NSMutableArray array];
+    
+    
+    NSMutableSet *mutset = [[NSMutableSet alloc] init];
+    
+    [mutset addObject:@"1"];
+    
+    [mutset  addObject:nil];
 }
 
 - (void)didReceiveMemoryWarning
