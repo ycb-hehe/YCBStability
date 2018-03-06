@@ -49,15 +49,15 @@ pod 'YCBStability'
 
 常见的 ```- (ObjectType)objectAtIndex:(NSUInteger)index``` 会引起数组越界，导致Crash
 
-引入 YCBStability后， 你依然使用objectAtIndex，但是会出现如下情况：
+#### 只需引入YCBStability.h，不需要修改任何代码
+
+objectAtIndex数组越界将不再闪退，mutArr在addObject:nil时也不会闪退，类似很多情况都如此
+
+但是有效规避闪，并不利于我们调试时发现bug，所以我们做了如下优化：
 
 Debug模式:依旧会Crash，但是我们加入了日志，方便追踪Crash信息 
 
 Release模式:我们将返回一个nil，防止Crash
-
-除了引入.h文件，你不需要做任何操作，也不需要修改任何代码
-
-但如果你的代码之前有过多的在objectAtIndex加入判断，建议你去掉，保持代码的简洁性
 
 ### NSDictionary
 
