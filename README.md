@@ -17,11 +17,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## 特效
 
-** 稳定性: 解决常见闪退
-** 无缝接入: 几乎不需要任何更改与替换现有代码
-** 无侵入性: 模型无需继承自其他基类。
-** 轻量: 该框架只有 2 个文件
-** 多样性: 区分了Debug与Release环境
+* 稳定性: 解决常见闪退
+* 无缝接入: 几乎不需要任何更改与替换现有代码
+* 无侵入性: 模型无需继承自其他基类。
+* 轻量: 该框架只有 2 个文件
+* 多样性: 区分了Debug与Release环境
 
 ## 安装
 
