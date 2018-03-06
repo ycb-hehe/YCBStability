@@ -36,7 +36,13 @@
     
     [mutset addObject:@"1"];
     
-    [mutset  addObject:nil];
+   // [mutset  addObject:nil];
+    
+    
+    NSMutableDictionary *mutdIC = [NSMutableDictionary dictionary];
+    [mutdIC setObject:@"1" forKey:@"2"];
+    [mutdIC setObject:@"3" forKey:nil];
+    [mutdIC setObject:nil   forKey:@"1"];
 }
 
 - (void)didReceiveMemoryWarning

@@ -303,10 +303,27 @@ void mutArray_method_exchangeImplementations(SEL name, SEL name2) {
 
 @implementation NSMutableDictionary (YCBStability)
 
++ (void)load
+{
+    Method fromMethod = class_getInstanceMethod(objc_getClass("__NSDictionaryM"), @selector(setObject:forKey:));
+    Method toMethod = class_getInstanceMethod(objc_getClass("__NSDictionaryM"), @selector(safeSetObject:forKey:));
+    method_exchangeImplementations(fromMethod, toMethod);
+}
+
 - (void)safeSetObject:(id)anObject forKey:(id <NSCopying>)aKey;
 {
+    
+    NSAssert((anObject), ([YCBStabilityLogs crashReason:@"被添加的object不存在"
+                                                release:@"不执行该方法"
+                                               otherLog:nil]));
+    
+    NSAssert((aKey), ([YCBStabilityLogs crashReason:@"被添加的key不存在"
+                                                release:@"不执行该方法"
+                                               otherLog:nil]));
+    
+    
     if (anObject && aKey) {
-        [self setObject:anObject forKey:aKey];
+        [self safeSetObject:anObject forKey:aKey];
     }
 }
 
