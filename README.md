@@ -85,7 +85,7 @@ Friend *friend = [friends firstObject];
 
 ### YCBNonEmpty
 
-这是一个简单的非空方法，但足够全面
+这是一个简单的非空判断方法，但足够全面
 
 例如：
 ```
@@ -103,7 +103,7 @@ Friend *friend = [friends firstObject];
 
 ## Author
 
-ycb-hehe, 113005209@qq.com
+ycb-hehe（宝哥）, 113005209@qq.com
 
 ## License
 
