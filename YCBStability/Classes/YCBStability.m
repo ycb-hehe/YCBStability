@@ -6,7 +6,7 @@
 //
 //
 
-#import "YCBStabilityKit.h"
+#import "YCBStability.h"
 #import <objc/runtime.h>
 #import <UIKit/UIKit.h>
 @interface YCBStabilityLogs : NSObject

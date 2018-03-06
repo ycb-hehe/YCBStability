@@ -1,7 +1,7 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
 
-#import "YCBStabilityKit.h"
+//#import "YCBStability.h"
 
 #else
 #ifndef FOUNDATION_EXPORT

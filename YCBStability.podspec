@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YCBStability'
-  s.version          = '1.0.0'
+  s.version          = '1.0.2'
   s.summary          = 'A Stability kit '
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,6 @@ Pod::Spec.new do |s|
 
   s.source_files = 'YCBStability/Classes/**/*.{h,m}'
   s.requires_arc = true
-s.public_header_files = 'Pod/Classes/**/*.h'
   # s.resource_bundles = {
   #   'YCBStability' => ['YCBStability/Assets/*.png']
   # }
