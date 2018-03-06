@@ -27,11 +27,12 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ### CocoaPods
 
+1.
 ```ruby
 pod 'YCBStability'
 ```
-执行 ```pod install or pod update.```
-导入 <YCBStability/YCBStability.h>。
+2. 执行 ```pod install or pod update.```
+3. 导入 <YCBStability/YCBStability.h>。
 
 ### 手动安装
 
