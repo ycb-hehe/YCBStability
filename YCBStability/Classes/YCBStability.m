@@ -9,6 +9,9 @@
 #import "YCBStability.h"
 #import <objc/runtime.h>
 #import <UIKit/UIKit.h>
+
+////////////////////////////////////////////////////////////////
+
 @interface YCBStabilityLogs : NSObject
 
 + (NSString *)crashReason:(NSString *)reson
@@ -25,9 +28,12 @@
 {
     NSMutableString *mutStr = [NSMutableString string];
     [mutStr appendString:@"\n \n/**NSAssert断言,Creash仅限于Debug模式\n"];
-    [mutStr appendString:[NSString stringWithFormat:@"/**Creash原因:%@ \n",reson]];
+    [mutStr appendString:[NSString stringWithFormat:@"/**Crash原因:%@ \n",reson]];
     [mutStr appendString:[NSString stringWithFormat:@"/**Release模式下:%@ \n",releaseLog]];
-    [mutStr appendString:[NSString stringWithFormat:@"/**其它:%@ \n",otherLog]];
+    
+    if ([YCBNonEmpty isString:otherLog]) {
+        [mutStr appendString:[NSString stringWithFormat:@"/**其它:%@ \n",otherLog]];
+    }
     
     return (NSString *)mutStr;
 }
@@ -35,6 +41,7 @@
 @end
 
 ////////////////////////////////////////////////////////////////
+
 @implementation YCBNonEmpty
 
 + (BOOL)isArray:(id)object
@@ -70,9 +77,6 @@
 + (void)load
 {
     array_method_exchangeClass(objc_getClass("__NSArrayI"));
-  //  array_method_exchangeClass( objc_getClass("__NSArray0"));
-  //  array_method_exchangeClass(objc_getClass("__NSSingleObjectArrayI"));
-  //  array_method_exchangeClass( objc_getClass("__NSPlaceholderArray"));
 }
 
 void array_method_exchangeClass(Class cls) {
@@ -88,8 +92,6 @@ void array_method_exchangeImplementations(Class cls, SEL name, SEL name2) {
     Method toMethod = class_getInstanceMethod(cls, name2);
     method_exchangeImplementations(fromMethod, toMethod);
 }
-
-
 
 
 - (NSUInteger)safeIndexOfObject:(id)anObject
@@ -168,8 +170,7 @@ void array_method_exchangeImplementations(Class cls, SEL name, SEL name2) {
 
 Class objc_NSMutArrayClass() {
     
-    //return objc_getClass("__NSArrayM");
-    return object_getClass([NSMutableArray class]);
+    return objc_getClass("__NSArrayM");
 }
 
 
@@ -183,6 +184,7 @@ void mutArray_method_exchangeImplementations(SEL name, SEL name2) {
 @end
 
 /////////////////////////////////////////////////////////////////////
+
 @implementation NSDictionary (YCBStability)
 
 - (NSString *)getStringForKey:(id)key
@@ -297,6 +299,7 @@ void mutArray_method_exchangeImplementations(SEL name, SEL name2) {
 
 
 ///////////////////////////////////////////////////////
+
 @interface NSMutableDictionary (YCBStability)
 @end
 
@@ -305,8 +308,8 @@ void mutArray_method_exchangeImplementations(SEL name, SEL name2) {
 
 + (void)load
 {
-    Method fromMethod = class_getInstanceMethod(objc_getClass("__NSDictionaryM"), @selector(setObject:forKey:));
-    Method toMethod = class_getInstanceMethod(objc_getClass("__NSDictionaryM"), @selector(safeSetObject:forKey:));
+    Method fromMethod = class_getInstanceMethod(objc_NSMutDictionaryClass(), @selector(setObject:forKey:));
+    Method toMethod = class_getInstanceMethod(objc_NSMutDictionaryClass(), @selector(safeSetObject:forKey:));
     method_exchangeImplementations(fromMethod, toMethod);
 }
 
@@ -327,21 +330,23 @@ void mutArray_method_exchangeImplementations(SEL name, SEL name2) {
     }
 }
 
+Class objc_NSMutDictionaryClass() {
+    
+    return objc_getClass("__NSDictionaryM");
+}
+
 @end
 
 
 ///////////////////////////////////////////////////////
 
-
 @interface NSMutableSet (YCBStability)
-
 @end
 
 @implementation NSMutableSet (YCBStability)
 
 + (void)load
 {
-
     mutSet_method_exchangeImplementations(@selector(addObject:), @selector(safeAddObject:));
 }
 
@@ -370,3 +375,7 @@ void mutSet_method_exchangeImplementations(SEL name, SEL name2) {
 }
 
 @end
+
+///////////////////////////////////////////////////////
+
+
