@@ -9,8 +9,6 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
 ## 介绍
 
 一款提高iOS稳定性，有效防止闪退的框架
