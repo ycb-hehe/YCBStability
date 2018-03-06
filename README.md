@@ -27,7 +27,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ### CocoaPods
 
-1.
+1.在Podfile添加：
 ```ruby
 pod 'YCBStability'
 ```
@@ -36,12 +36,9 @@ pod 'YCBStability'
 
 ### 手动安装
 
-下载 YCBStability 文件夹内的所有内容。
-将 YCBStability 内的源文件添加(拖放)到你的工程。
-导入 YCBStability.h。
-
-
-
+1. 下载 YCBStability 文件夹内的所有内容。
+2. 将 YCBStability 内的源文件添加(拖放)到你的工程。
+3. 导入 YCBStability.h。
 
 
 ## 使用
@@ -50,11 +47,13 @@ pod 'YCBStability'
 
 ### NSArray
 
-常见的 ```- (ObjectType)objectAtIndex:(NSUInteger)index``` 会引起数组越界，
+常见的 ```- (ObjectType)objectAtIndex:(NSUInteger)index``` 会引起数组越界，导致Crash
 
-引入 YCBStability后， 你依然使用objectAtIndex，
-在Debug模式下，我们在Crash加入了日志，方便追踪Crash信息
-在Release模式下，我们将返回一个nil，防止Crash
+引入 YCBStability后， 你依然使用objectAtIndex </br>
+在Debug模式下，依旧会Crash，但是我们加入了日志，方便追踪Crash信息 </br>
+在Release模式下，我们将返回一个nil，防止Crash </br>
+
+
 
 
 
