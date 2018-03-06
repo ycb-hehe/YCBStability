@@ -52,6 +52,7 @@ pod 'YCBStability'
 引入 YCBStability后， 你依然使用objectAtIndex，但是会出现如下情况：
 
 Debug模式:依旧会Crash，但是我们加入了日志，方便追踪Crash信息 
+
 Release模式:我们将返回一个nil，防止Crash
 
 除了引入.h文件，你不需要做任何操作，也不需要修改任何代码
