@@ -5,10 +5,6 @@
 [![License](https://img.shields.io/cocoapods/l/YCBStability.svg?style=flat)](http://cocoapods.org/pods/YCBStability)
 [![Platform](https://img.shields.io/cocoapods/p/YCBStability.svg?style=flat)](http://cocoapods.org/pods/YCBStability)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## 介绍
 
 一款提高iOS稳定性，有效防止闪退的框架
