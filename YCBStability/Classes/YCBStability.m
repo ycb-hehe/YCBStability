@@ -211,7 +211,7 @@ void mutArray_method_exchangeImplementations(SEL name, SEL name2) {
 {
     id obj = [self objectForKey:key];
 
-    NSAssert(([obj isKindOfClass:[NSString class]]),
+    NSAssert(([obj isKindOfClass:[NSArray class]]),
              ([YCBStabilityLogs crashReason:@"无法获取NSArray类型"
                                     release:@"返回[NSArray array]实例"
                                    otherLog:[NSString stringWithFormat:@"得到的类型是：%@",
